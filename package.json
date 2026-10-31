@@ -1,0 +1,30 @@
+{
+  "name": "ai-mystery-room",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node server/index.js\" \"node node_modules/vite/bin/vite.js --host 0.0.0.0\"",
+    "dev:client": "node node_modules/vite/bin/vite.js --host 0.0.0.0",
+    "dev:server": "node server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "mongodb": "^6.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.5"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}
